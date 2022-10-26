@@ -17,7 +17,6 @@
 
 
 <?php 
- broken stuff
 $page_name = 'Home';
 $site_name = 'IDM 232';
 $document_title = $page_name . '|' . $site_name;
@@ -29,6 +28,18 @@ function redirect_to($location)
 }
 
 // redirect_to('google.com');
+
+$query = ‘SELECT * FROM users’;
+$result = mysqli_query($connection, $query);
+
+// Check there are no errors in our SQL statement
+if(!$results) {
+    die('Database query failed.');
+}
+
+
+
+
 
 ?>
 
