@@ -1,0 +1,136 @@
+:root{
+    --background-color: #FFFFFF;
+    --background-color2: #F2E5D7;
+    --text-color: #3F2F2F;
+    --dark-color: #4D7C55;
+    --light-color: #BAE798;
+    --font-1: "Haboro-serif";
+    --font-2: "caecilia-sans-text";
+    --dot-margin: 3px;
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+body{
+    font-family: var(--font-2);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header{
+    background-color: var(--background-color);
+    height: 80px;
+    margin: 0 auto;
+}
+
+.header__cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px 90px 30px 90px;
+}
+
+.logo{
+    border-bottom: 3px solid var(--light-color);
+    padding-bottom: 8px;
+}
+
+h1{
+    font-family: var(--font-1);
+    font-weight: 500;
+}
+
+.login{
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+
+
+/* VVVV PAGE CONTENT VVVV */
+
+.top{
+    background-color: var(--background-color2);
+    border-bottom: 2px solid var(--text-color);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info__card{
+    background-color: var(--background-color);
+    border-left: 8px solid var(--dark-color);
+    border-bottom: 8px solid var(--dark-color);
+    width: 410px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 55px;
+    margin-top: 64px;
+    z-index: 8;
+}
+
+.recipe__title{
+    font-family: var(--font-1);
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.info{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.info li{
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.info span{
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.dot__filled{
+    height: 15px;
+    width: 15px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: var(--dot-margin);
+}
+
+.dot__empty{
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--light-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: var(--dot-margin);
+}
+
+.recipe__image{
+    width: 860px;
+    height: auto;
+    border-right: 10px solid var(--text-color);
+    border-top: 10px solid var(--text-color);
+    z-index: 4;
+    margin-left: -40px;
+}
