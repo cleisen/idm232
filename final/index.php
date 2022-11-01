@@ -29,8 +29,8 @@
             </div>
         </div>
 
-        <div class="recipe__image">
-            <img src="images/broccoli-and-chicken.png">
+        <div>
+            <img src="images/broccoli-and-chicken.png" class="recipe__image">
         </div>
 
     </section>

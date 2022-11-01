@@ -27,6 +27,11 @@ body{
     color: var(--text-color);
 }
 
+
+
+/*  NAV BAR  */
+
+
 .header{
     background-color: var(--background-color);
     height: 80px;
@@ -195,7 +200,7 @@ h1{
 
 
 
-/* INGREDIENTS SECTION */
+/* DIRECTIONS SECTION */
 
 
 .direction__section{
@@ -247,4 +252,19 @@ hr{
 
 .enjoy{
     padding: 0;
+}
+
+
+
+/* FOOTER */
+
+
+.footer{
+    height: 80px;
+}
+
+.footer__cont{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 }
