@@ -61,9 +61,14 @@ h1{
 
 /* VVVV PAGE CONTENT VVVV */
 
+
+
+/* TOP INFO SECTION */
+
+
 .top{
     background-color: var(--background-color2);
-    border-bottom: 2px solid var(--text-color);
+    /* border-bottom: 2px solid var(--text-color); */
     padding: 50px 100px;
     display: flex;
     flex-direction: row;
@@ -133,4 +138,113 @@ h1{
     border-top: 10px solid var(--text-color);
     z-index: 4;
     margin-left: -40px;
+}
+
+
+
+/* INGREDIENTS SECTION */
+
+
+.ingredient__section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.center__card{
+    width: 90%; 
+    height: auto;
+    margin-top: 80px;
+    border: 3px solid var(--light-color);
+    padding: 50px;
+    background-color: var(--background-color);
+}
+
+.center__subtitle{
+    text-align: center;
+    font-family: var(--font-1);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    padding-bottom: 80px;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.check{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    accent-color: var(--dark-color);
+}
+
+.ingredients li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+.ingredients span{
+    font-weight: 600;
+}
+
+
+
+/* INGREDIENTS SECTION */
+
+
+.direction__section{
+    background-color: var(--background-color2);
+    padding: 160px 0 80px 0;
+    margin-top: -80px;
+}
+
+.center__content{
+    margin: 0 200px;
+}
+
+.step{
+    margin-bottom: 60px;
+}
+
+.step__title{
+    font-family: var(--font-1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.directions{
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 20px;
+    border-left: 4px solid var(--dark-color);
+}
+
+.directions span{
+    font-weight: 600;
+}
+
+.closing__phrase{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0 20px 0;
+}
+
+hr{
+    width: 200px;
+    height: 2px;
+    border-top: 2px solid var(--light-color);
+    margin: auto 80px;
+}
+
+.enjoy{
+    padding: 0;
 }
