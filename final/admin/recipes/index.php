@@ -54,12 +54,14 @@ $result = mysqli_query($db_connection, $query);
     while ($user = mysqli_fetch_array($result)) {
         echo "<tr>
                 <td>{$user['id']}</td>
-                <td>{$user['first_name']} {$user['last_name']}</td>
-                <td>{$user['email']}</td>
-                <td>{$user['phone']}</td>
+                <td>{$user['recipe_name']}</td>
+                <td>{$user['difficulty']}</td>
+                <td>{$user['prep_time']}</td>
+                <td>{$user['cook_time']}</td>
+                <td>{$user['directions']}</td>
                 <td>
-                  <a href='http://localhost:8888/final/admin/users/edit.php?id={$user['id']}' >Edit</a>
-                  <a href='http://localhost:8888/final/admin/users/delete.php?id={$user['id']}' >Delete</a>
+                  <a href='http://localhost:8888/final/admin/recipes/edit.php?id={$user['id']}' >Edit</a>
+                  <a href='http://localhost:8888/final/admin/recipes/delete.php?id={$user['id']}' >Delete</a>
                 </td>
               </tr>";
     }

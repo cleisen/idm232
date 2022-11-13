@@ -23,7 +23,7 @@ $result = mysqli_query($db_connection, $query);
       <div>
         <div>
           <div>
-            <form action="<?php echo site_url(); ?>/_includes/process-add-recipe.php" method="POST">
+            <form action="<?php echo site_url() . '/../../_includes/process-add-recipe.php' ?>"; method="POST">
               <div class="block">
                 <label for="">Recipe Name</label>
                 <input class="" type="text" name="recipe_name">
