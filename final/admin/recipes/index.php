@@ -29,7 +29,7 @@ $result = mysqli_query($db_connection, $query);
       </div>
       <div>
         <button type="button">
-            <a href="<?php echo site_url() . '/add.php' ?>">
+            <a href="<?php echo site_url() . '/admin/recipes/add.php' ?>">
             Add Recipe</a></button>
       </div>
     </div>
@@ -44,9 +44,6 @@ $result = mysqli_query($db_connection, $query);
                   <th scope="col">Difficulty
                   </th>
                   <th scope="col">Cook Time</th>
-                  <th scope="col">
-                    <span class="sr-only">Edit</span>
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -60,8 +57,8 @@ $result = mysqli_query($db_connection, $query);
                 <td>{$user['cook_time']}</td>
                 <td>{$user['directions']}</td>
                 <td>
-                  <a href='http://localhost:8888/final/admin/recipes/edit.php?id={$user['id']}' >Edit</a>
-                  <a href='http://localhost:8888/final/admin/recipes/delete.php?id={$user['id']}' >Delete</a>
+                  <a href='http://localhost:8888/admin/recipes/edit.php?id={$user['id']}' >Edit</a>
+                  <a href='http://localhost:8888/admin/recipes/delete.php?id={$user['id']}' >Delete</a>
                 </td>
               </tr>";
     }

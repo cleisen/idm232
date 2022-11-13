@@ -32,7 +32,7 @@ include_once __DIR__ . '/_components/header.php';
         </div>
 
         <div>
-            <img src="images/broccoli-and-chicken.png" class="recipe__image">
+            <img src="<?php echo site_url() . '/images/broccoli-and-chicken.png' ?>" class="recipe__image">
         </div>
 
     </section>
