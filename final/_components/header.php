@@ -30,7 +30,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
             <h1>lemon & basil</h1>
         </div>
         <div class="login">
-            LOGIN
+            ADMIN
         </div>
     </div>
 </header>
