@@ -4,6 +4,7 @@
  * logic for the application.
  */
 
+
 // An array of values that will determine if you're working locally or on a production server.
 // @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
 $whitelist_host = ['127.0.0.1', '::1'];
