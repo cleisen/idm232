@@ -48,9 +48,9 @@ if ($results->num_rows > 0) {
             $site_url = site_url();
             // If we have results, show them
               if ($recipes_results) {
-                  while ($recipes_results = mysqli_fetch_assoc($results)) {
+                  while ($recipes_results = mysqli_fetch_array($results)) {
                       echo '<div class="">';
-                      echo '<h2>' . $recipes_results['recipe_title'] . ' ' . $recipes_results['file_path'] . '</h2>';
+                      echo '<h2>' . $recipes_results['recipe_title'] . '</h2>';
                       echo '</div>';
                   }
               }

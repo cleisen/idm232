@@ -29,23 +29,10 @@ if ($results->num_rows > 0) {
 
 ?>
 
-
-<main>
-<div>
-  <div>
-    <div>
-      <div">
-        <form action="<?php echo site_url(); ?>index.php" method="GET">
-          <input type="text" name="search" id="search" placeholder="Search"
-            value="<?php echo $search; ?>">
-          <!-- <button type="submit">Search</button> -->
-          <button type="submit">
-          <a href="<?php echo site_url(); ?>/results.php">Search</a>
-        </button>
-        </form>
-
-  </div>
-</div>
+<form action="<?php echo site_url(); ?>/search" method="GET">
+<input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
+<button class="btn btn-outline-success search-button" type="submit">Search</button>
+</form>
 
 <?php
 // get data from database
