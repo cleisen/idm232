@@ -62,7 +62,7 @@ if ($results->num_rows > 0) {
       if ($recipes_results) {
           while ($recipes_results = mysqli_fetch_assoc($results)) {
               echo '<div class="">';
-              echo '<h2>' . $recipes_results['recipe_name'] . ' ' . $recipes_results['difficulty'] . '</h2>';
+              echo '<h2>' . $recipes_results['recipe_title'] . ' ' . $recipes_results['file_path'] . '</h2>';
               echo '</div>';
           }
       }
@@ -70,6 +70,32 @@ if ($results->num_rows > 0) {
 
   </div>
 </div>
+
+<?php
+// get data from database
+
+$query = 'SELECT * FROM recipes ORDER BY recipe_title ASC';
+$result = mysqli_query($db_connection, $query);
+
+?>
+
+
+<div class="">
+    <div class="">
+        <div class="">
+            <h1 class="">All Recipes</h1>
+        </div>
+    </div>    
+</div>
+
+<div class="">  
+    <div class="">
+        <?php include __DIR__ . '/_components/recipeCards.php'; ?>
+    </div>
+</div>
+
+
+
 </main>
 
 

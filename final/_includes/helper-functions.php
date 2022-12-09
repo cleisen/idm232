@@ -29,7 +29,8 @@ function site_url()
  */
 function redirect_to($path)
 {
-    header('Location: ' . site_url() . $path);
+    $full_url = site_url() . $path;
+    echo "<script>window.location = '$full_url';</script>";
     exit;
 }
 
@@ -51,4 +52,10 @@ function project_root()
 function getFormattedDateTime()
 {
     return  date('Y-m-d H:i:s');
+}
+
+function sanitize_value($value)
+{
+    global $db_connection;
+    return mysqli_real_escape_string($db_connection, $value);
 }

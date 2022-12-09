@@ -5,6 +5,11 @@ $page_title = 'Edit Recipe';
 include_once __DIR__ . '/../../_components/header.php';
 ?>
 
+<div>
+    <?php $title = 'Edit Recipes';?>
+    <h1 class="text-center text-dark"><?php echo $title; ?></h1>
+</div>
+
 <?php
 // get users data from database
 $query = "SELECT * FROM recipes WHERE id = {$_GET['id']}";
@@ -32,32 +37,32 @@ if ($result->num_rows > 0) {
           <div>
             <form action="<?php echo site_url(); ?>/_includes/process-edit-recipe.php" method="POST">
               <div class="block">
-                <label for="">Recipe Name</label>
-                <input type="text" name="recipe_name"
-                  value="<?php echo $user['recipe_name']; ?>">
+                <label for="">Recipe Title</label>
+                <input type="text" name="recipe_title"
+                  value="<?php echo $recipe['recipe_title']; ?>">
               </div>
 
               <div class="block">
-                <label for="">Difficulty Level</label>
-                <input type="text" name="difficulty"
-                  value="<?php echo $user['difficulty']; ?>">
+                <label for="">Image</label>
+                <input type="text" name="file_path"
+                  value="<?php echo $recipe['file_path']; ?>">
               </div>
 
 
               <div class=" block">
-                <label for="">Prep Time</label>
-                <input type="text" name="prep_time" 
-                    value="<?php echo $user['prep_time']; ?>">
+                <label for="">Introduction</label>
+                <input type="text" name="introduction" 
+                    value="<?php echo $recipe['introduction']; ?>">
               </div>
               <div class=" block">
-                <label for="">Cook Time</label>
-                <input type="text" name="cook_time" 
-                    value="<?php echo $user['cook_time']; ?>">
+                <label for="">Ingredients</label>
+                <input type="text" name="ingredients" 
+                    value="<?php echo $recipe['ingredients']; ?>">
               </div>
               <div class=" block">
-                <label for="">Directions</label>
-                <input type="text" name="directions" 
-                    value="<?php echo $user['directions']; ?>">
+                <label for="">Instructions</label>
+                <input type="text" name="instructions" 
+                    value="<?php echo $recipe['instructions']; ?>">
               </div>
               <input type="submit" value="Update">
 

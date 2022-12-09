@@ -25,27 +25,27 @@ $result = mysqli_query($db_connection, $query);
           <div>
             <form action="<?php echo site_url() . '/_includes/process-add-recipe.php' ?>"; method="POST">
               <div class="block">
-                <label for="">Recipe Name</label>
-                <input class="" type="text" name="recipe_name">
+                <label for="">Recipe Title</label>
+                <input class="" type="text" name="recipe_title">
               </div>
 
               <div class="block">
-                <label for="">Difficulty Level</label>
-                <input class="" type="text" name="difficulty">
+                <label for="">Image</label>
+                <input class="" type="text" name="file_path">
               </div>
 
 
               <div class="block">
-                <label for="">Prep Time</label>
-                <input class="" type="text" name="prep_time">
+                <label for="">Introduction</label>
+                <input class="" type="text" name="introduction">
               </div>
               <div class="block">
-                <label for="">Cook Time</label>
-                <input class="" type="text" name="cook_time">
+                <label for="">Ingredients</label>
+                <input class="" type="text" name="ingredients">
               </div>
               <div class="block">
-                <label for="">Directions</label>
-                <input class="" type="text" name="directions">
+                <label for="">Instructions</label>
+                <input class="" type="text" name="instructions">
               </div>
               <input
                 type="submit" value="submit">

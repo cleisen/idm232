@@ -6,15 +6,15 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$recipe_name_value = $_POST['recipe_name'];
-$difficulty_value = $_POST['difficulty'];
-$prep_time_value = $_POST['prep_time'];
-$cook_time_value = $_POST['cook_time'];
-$directions_value = $_POST['directions'];
+$recipe_title_value = sanitize_value($_POST['recipe_title']);
+$file_path_value = sanitize_value($_POST['file_path']);
+$introduction_value = sanitize_value($_POST['introduction']);
+$ingredients_value = sanitize_value($_POST['ingredients']);
+$instructions_value = sanitize_value($_POST['instructions']);
 
 // Create a SQL statement to insert the data into the database
-$query = "INSERT INTO recipes (recipe_name, difficulty, prep_time, cook_time, directions) 
-VALUES ('$recipe_name_value', '$difficulty_value', '$prep_time_value', '$cook_time_value', '$directions_value')";
+$query = "INSERT INTO recipes (recipe_title, file_path, introduction, ingredients, instructions) 
+VALUES ('$recipe_title_value', '$file_path_value', '$introduction_value', '$ingredients_value', '$instructions_value')";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);
