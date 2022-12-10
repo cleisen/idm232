@@ -28,17 +28,22 @@
 
 ?>
 
-<div class="mx-auto my-16 max-w-7xl px-4">
-  <div class="px-4 sm:px-6 lg:px-8">
-    <div class="sm:flex sm:items-center">
-      <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Search Results</h1>
+<div class="top_column">
+        <div class="center">
+            <div class="column">
+        <div class="search-title">VIEWING RESULTS FOR</div>
+        <div class="search-keyword">"<?php echo $search; ?>"</div>
+            </div>
+        </div>
+      <div class="search-bar">
         <form action="<?php echo site_url(); ?>/search" method="GET">
-          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search"
+          <input class="search-input" type="text" name="search" id="search" placeholder="Search"
             value="<?php echo $search; ?>">
-          <button class = "btn btn-outline-success search-button" type="submit">Search</button>
+          <button class = "search-button" type="submit">Search</button>
         </form>
-        <h2>You searched for "<?php echo $search; ?>"</h2>
+        </div>
+        </div>
+        
         <?php
             // If no results, echo no results
             if (!$recipes_results) {
@@ -65,8 +70,7 @@
                             <div class = 'recipe-card-img-container'>
                                 <img class = 'recipe-card-img' src='{$site_url}/{$recipes_results['file_path']}'>
                             </div>
-                            <h2>{$recipes_results['recipe_title']}</h2>
-                            <h3>{$recipes_results['introduction']} min</h3>
+                            <p class= 'recipe-card-title'>{$recipes_results['recipe_title']}</p>
                             </div>
                         </a>
                     ";

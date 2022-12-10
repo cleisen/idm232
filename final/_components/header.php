@@ -15,7 +15,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/images/lemon.png">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/xqu1ubt.css">
   <title><?php echo $document_title ; ?></title>
@@ -27,10 +27,10 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <header class="header">
     <div class="header__cont">
         <div class="logo">
-            <h1>lemon & basil</h1>
+        <a class="logo-text" href="<?php echo site_url(); ?>/index.php">lemon & basil</a>
         </div>
         <div class="login">
-            ADMIN
+        <a class="" href="<?php echo site_url(); ?>/admin/recipes/index.php">ADMIN</a>
         </div>
     </div>
 </header>

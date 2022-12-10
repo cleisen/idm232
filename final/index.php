@@ -29,11 +29,15 @@ if ($results->num_rows > 0) {
 
 ?>
 
-<form action="<?php echo site_url(); ?>/search" method="GET">
-<input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
-<button class="btn btn-outline-success search-button" type="submit">Search</button>
-</form>
+<main>
+<img src="<?php echo site_url(); ?>/images/home-hero.png" class="home-hero"></img>
 
+<div class="search-bar">
+<form action="<?php echo site_url(); ?>/search" method="GET">
+<input class="search-input" type="text" name="search" id="search" placeholder="what do you want to make?">
+<button class="search-button" type="submit">search</button>
+</form>
+</div>
 <?php
 // get data from database
 
@@ -41,15 +45,6 @@ $query = 'SELECT * FROM recipes ORDER BY recipe_title ASC';
 $result = mysqli_query($db_connection, $query);
 
 ?>
-
-
-<div class="">
-    <div class="">
-        <div class="">
-            <h1 class="">All Recipes</h1>
-        </div>
-    </div>    
-</div>
 
 <div class="">  
     <div class="">
