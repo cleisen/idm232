@@ -30,8 +30,9 @@ if ($results->num_rows > 0) {
 ?>
 
 <main>
+  <div class="center-img"></div>
 <img src="<?php echo site_url(); ?>/images/home-hero.png" class="home-hero"></img>
-
+</div>
 <div class="search-bar">
 <form action="<?php echo site_url(); ?>/search" method="GET">
 <input class="search-input" type="text" name="search" id="search" placeholder="what do you want to make?">
