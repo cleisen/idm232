@@ -195,6 +195,23 @@ a:hover{
 }
 
 
+/* admin page */
+
+.add_recipe{
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: var(--text-color);
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.admin_content{
+  margin: 50px 100px;
+}
+
+
+
 
 /* TOP INFO SECTION */
 
