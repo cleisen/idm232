@@ -10,7 +10,7 @@ if (!isset($result)) {
         echo "
         <a href='{$site_url}/recipe/index.php?id={$recipes['id']}' class=''>
             <div class='recipe-card'>
-            <img class='recipe-card-img' width='100px' height='100px' src='{$recipes['file_path']}' alt=''>                
+            <img class='recipe-card-img' width='100px' height='100px' src='{$site_url}/{$recipes['file_path']}' alt=''>                
                 <div class=''>
                     <p class='recipe-card-title'>{$recipes['recipe_title']}</p>
                 </div> 
